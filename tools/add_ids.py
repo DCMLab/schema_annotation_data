@@ -1,19 +1,20 @@
 from bs4 import BeautifulSoup #, NavigableString
+from lxml import etree
 import argparse
 
 testfile = '/home/chfin/Uni/phd/data/schema_annotation_data/mozart_sonatas/musicxml/K279-1.xml'
 
 def load_with_ids(filename, keep=False):
-    with open(filename, 'r') as f:
-        xml = BeautifulSoup(f.read(), 'xml')
-    for i,note in enumerate(xml('note')):
-        if not (keep and note.has_attr['xml:id']):
-            note['xml:id'] = "note"+str(i)
+    xml = etree.parse(filename)
+    for i,note in enumerate(xml.findall('.//note')):
+        # we need to use the {namespace} syntax instead of 'xml:' with lxml
+        if not (keep and ('{http://www.w3.org/XML/1998/namespace}id' in note.keys())):
+            note.attrib['{http://www.w3.org/XML/1998/namespace}id'] = 'note'+str(i)
     return xml
 
 def save(filename, xml):
-    with open(filename, 'w') as f:
-        f.write(xml.prettify())
+    with open(filename, 'wb') as out:
+        xml.write(out)
 
 def main():
     parser = argparse.ArgumentParser()
