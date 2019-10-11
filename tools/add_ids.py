@@ -1,4 +1,3 @@
-from bs4 import BeautifulSoup #, NavigableString
 from lxml import etree
 import argparse
 
