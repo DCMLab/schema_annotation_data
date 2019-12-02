@@ -51,10 +51,10 @@
     "doremi.4.min": [["P1", "m3", "P5", "P1"],
                      ["M7", "P4", "P5", "M2"],
                      ["P1", "m3", "P5", "m3"]],
-    "doremi.2.5-1bass": [["P1", "P1"],
+    "doremi.2.cadbass": [["P1", "P1"],
                          ["P5", "M2"],
                          ["P1", "M3"]],
-    "doremi.2.5-1bassmin": [["P1", "P1"],
+    "doremi.2.cadbass.min": [["P1", "P1"],
                             ["P5", "M2"],
                             ["P1", "m3"]],
 
