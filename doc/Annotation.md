@@ -5,7 +5,7 @@
 Here is what you need to get started quickly.
 For [more information on git and GitHub](#git-and-the-github-app), see below.
 
-1. Create an account on [GitHub](github.com/).
+1. Create an account on [GitHub](https://github.com/).
    Let us know your username so that we can give you write access on this repository.
 1. Install the [GitHub desktop app](https://desktop.github.com/) and log in with your account
    ([more information](#installing-the-github-app)).
