@@ -6,7 +6,8 @@ Here is what you need to get started quickly.
 For [more information on git and GitHub](#git-and-the-github-app), see below.
 
 1. Create an account on [GitHub](github.com/).
-1. Install the [GitHub desktop app](https://desktop.github.com/)
+   Let us know your username so that we can give you write access on this repository.
+1. Install the [GitHub desktop app](https://desktop.github.com/) and log in with your account
    ([more information](#installing-the-github-app)).
 1. "Clone" this repository.
    1. In the GitHub app, go to `File -> Clone repository`.
@@ -51,7 +52,23 @@ TODO
 
 ### Installing the GitHub App
 
-TODO
+Download and install the GitHub Desktop App:
+
+- **On Ubuntu:** In the terminal, run the command line
+  ```
+  $ sudo snap install github-desktop --beta --classic
+  ```
+- **On Windows:** 
+  1. Visit the [GitHub Desktop App webpage](https://desktop.github.com/).
+  1. Choose **Download for Windows**.
+  1. Launch the downloaded file and click **Install**.
+- **On MacOS:**
+  1. Visit the [GitHub Desktop App webpage](https://desktop.github.com/).
+  1. Choose **Download for Mac**.
+  1. Unzip the downloaded file.
+  1. *Optional:* Move **GitHub Desktop** to the **Applications** folder.
+
+Start the app and log in with the account that has access to this repository.
 
 ### Using Git
 
