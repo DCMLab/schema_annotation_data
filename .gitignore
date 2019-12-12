@@ -1,1 +1,7 @@
 tools/env/
+manual/manual.aux
+manual/manual.log
+manual/manual.out
+manual/manual.synctex.gz
+manual/manual.toc
+.DS_Store
